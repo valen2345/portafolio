@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#fondo {
+  height: 100vh;
+  background-image: url(../img/pexels-madison-inouye-1831234.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+#hola {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+#boton {
+  background-color: #ffabab;
+  border: 1px solid white;
+}
+#boton:hover {
+  background-color: #d14d72;
+}
+.nav-container {
+  display: flex;
+  background-color: #ffabab;
+  align-items: center;
+  justify-content: center;
+}
+.nav-item:hover {
+  background-color: #d14d72;
+}
+
+.about-me {
+  background-color: #ffabab;
+  height: 100vh;
+}
+
+.container-info {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.container-izquierda {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container-derecha {
+  width: 50%;
+  height: 100%;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 40px;
+}
+.titulo-info {
+  font-size: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.parrafo-info {
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.img-avatar {
+  border-radius: 80%;
+  width: 600px;
+  height: 600px;
+}
+.container-contactos {
+  display: flex;
+  background-color: #fef2f4;
+  height: 100vh;
+}
+.contactos-izquierda {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.contactame-p {
+  font-size: 30px;
+}
+.contactos-derecha {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.ultima {
+  width: 600px;
+  height: 600px;
+  border-radius: 100%;
+}
+.hoja-vida {
+  width: 480px;
+  height: 720px;
+}
+.hero_title {
+  display: block;
+  width: fit-content;
+  font-size: 4rem;
+  position: relative;
+  color: transparent;
+  animation: text_reveal 0.5s ease forwards;
+  animation-delay: 1ss;
+}
+
+.hero_title:nth-child(1) {
+  animation-delay: 1s;
+}
+.hero_title:nth-child(2) {
+  animation-delay: 1.5s;
+}
+.hero_title:nth-child(3) {
+  animation: text_reveal_color 0.1ms ease forwards;
+  animation-delay: 2.3s;
+}
+
+.hero_title span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: #d14d72;
+  animation: text_reveal_box 1s ease;
+  animation-delay: 0.1s;
+}
+.hero_title:nth-child(1) span {
+  animation-delay: 0.5s;
+}
+.hero_title:nth-child(2) span {
+  animation-delay: 1s;
+}
+.hero_title:nth-child(3) span {
+  animation-delay: 1.5s;
+}
+
+@keyframes text_reveal_box {
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@keyframes text_reveal {
+  100% {
+    color: black;
+    background-color: rgba(136, 82, 92, 0);
+  }
+}
+@keyframes text_reveal_color {
+  100% {
+    color: #d14d72;
+    font-weight: 500;
+  }
+}
+.footer {
+  height: 80px;
+  background-color: #d14d72;
+}
+.modal-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#icono {
+  color: #fef2f4;
+  padding-right: 20px;
+  font-size: 30px;
+  text-decoration: none;
+}
+.logo-principal {
+  height: 60px;
+  width: 60px;
+  border-radius: 80%;
+}
